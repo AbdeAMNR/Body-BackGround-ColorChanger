@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script lang="javascript">
+        document.write("Made by Abderrahim AMANAR")
+        function dd() {
+            var max = 255;
+
+            var a = Math.floor(Math.random() * (max + 1 ));
+            var b = Math.floor(Math.random() * (max + 1 ));
+            var c = Math.floor(Math.random() * (max + 1 ));
+
+            //  document.getElementById("dd").innerHTML = "<H1>" + "RGB(" + a + "," + b + "," + c + ")" + "</H1>";
+
+            document.write("<h1>" + "RGB(" + a + "," + b + "," + c + ")" + "</h1>");
+            document.getElementsByTagName("body")[0].style.backgroundColor = "RGB(" + a + "," + b + "," + c + ")";
+            document.close();
+            window.setTimeout("dd()", 250);
+        }
+
+    </script>
+
+</head>
+<body id="dd" onload="dd();">
+
+</body>
+</html>
